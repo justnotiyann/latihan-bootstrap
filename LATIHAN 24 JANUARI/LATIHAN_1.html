@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LATIHAN 24 JANUARI</title>
+  </head>
+
+  <body>
+    <!-- for loop -->
+    <!-- <script>
+      for (let ini_perulangan = 0; ini_perulangan <= 10; ini_perulangan++) {
+        document.writeln(`<p>Manado ke ${ini_perulangan}</p>`);
+      }
+    </script> -->
+    <!-- end for loop -->
+
+    <!-- WHILE LOOP -->
+    <!-- <script>
+      let ayam = 1;
+
+      while (ayam <= 10) {
+        document.writeln("<p>Berokok</p>");
+        ayam++;
+      }
+    </script> -->
+    <!-- END WHILE LOOP -->
+
+    <!-- DO WHILE LOOP -->
+    <!-- <script>
+      let ayam = 1;
+      do {
+        document.writeln(`<p>Ini Perulangan yang ke ${ayam}</p>`);
+        ayam++;
+      } while (ayam <= 10);
+    </script> -->
+    <!-- END OF DO WHILE LOOP -->
+
+    <!-- BREAK AND CONUTINE -->
+    <!-- <script>
+      for (let i = 1; i <= 100; i++) {
+        if (i % 2 === 0) {
+          continue;
+        }
+        document.writeln(`<p>Ini Bilangan Ganjil yang ke ${i}</p>`);
+      }
+    </script> -->
+    <!-- END OF BREAK AND CONUTINE -->
+
+    <!-- FOR IN -->
+    <!-- <script>
+      const person = {
+        firstName: "Muhamad",
+        middleName: "Iyan",
+      };
+
+      for (const penampung in person) {
+        document.writeln(`<p>Ini Isi variabel penampung : ${penampung}`);
+        document.writeln(`<p>Lalu ini isi penampung kedalam person: ${person[penampung]}`);
+      }
+    </script> -->
+    <!-- END OF FOR IN -->
+
+    <!-- FOR OF -->
+    <!-- <script>
+      const nama = ["iyan", "muamma"];
+
+      for (const isi of nama) {
+        document.writeln(`<p>Ini isi array : ${isi}`);
+      }
+    </script> -->
+    <!-- FOR OF -->
+
+    <!-- latihan for of -->
+    <script>
+      // const makanan_gula = ["Soda", "Hamburger", "Tea Jus", "Gooday"];
+
+      // for (const gula of makanan_gula) {
+      //   document.writeln(`<p>Ini adalah isi dari array makanan_gula : ${makanan_gula}`);
+      // }
+
+      // const minuman_gula = {
+      //   tinggi: "goda",
+      //   medium: "teajus",
+      //   rendah: "air putih",
+      // };
+
+      // for (const gula2 in minuman_gula) {
+      //   document.writeln(`<p>Ini adalah isi property dari array makanan_gula : ${gula2}. Lalu ini isi value nya ${minuman_gula[gula2]}`);
+      // }
+
+      // const gula = {
+      //   tinggi: "soda",
+      //   medium: "teh",
+      //   rendah: "air putih",
+      // };
+
+      // cara mengakses property dari tipe data object dengan menggunakan perulangan FOR IN
+
+      // for (const property in gula) {
+      //   document.writeln(`<p>Ini Property dari Tipe Data Object : ${property}`);
+      // }
+
+      // cara mengakses value dari tipe data object dengna menggunakan perulangan FOR IN -->
+
+      // for (const value in gula) {
+      //   document.writeln(`<p>Ini Value dari Tipe Data Object : ${gula[value]}`);
+      //   }
+
+      // penggabungan
+
+      // for (const gabung in gula) {
+      //   document.writeln(`<p>Ini Property : ${gabung}  : Kemudian ini value : ${gula[gabung]}`);
+      // }
+    </script>
+    <!-- end of latihan of -->
+
+    <!-- ternery -->
+    <script>
+      //   const nilai = Number(prompt("ketik 1 agar muncul love "));
+
+      //   const grade = nilai >= 1 ? "Bagus Tingkatkan" : "Bego lu tolol";
+      //   document.writeln(grade);
+
+      // const ayang = parseInt(prompt("Ketik 1 Untuk Memunculkan Love: "));
+
+      // const hasil = ayang == 1 ? "I Love u ayang" : "Ih kok gitu si";
+      // document.writeln(hasil);
+
+      //
+    </script>
+    <!-- end of ternery -->
+
+    <!-- FUNCTION -->
+    <script>
+      // function akuSayangBebep() {
+      //   document.writeln("Hello bep aku sanyang kamu");
+      // }
+
+      //   function sayHello(firstName, lastName) {
+      //     document.writeln(`<p>Hello ${firstName} ${lastName}`);
+      //   }
+
+      //   let z = prompt("Masukkan nama anda : ");
+    </script>
+    <!-- END OF FUNCTION -->
+
+    <!-- FUNCTION PARAMETER -->
+    <script>
+      // function sayMadafaka(tod, ngentod) {
+      //   document.writeln(`<p>Woi apakabar ${tod} ${ngentod}</p>`);
+      // }
+
+      // sayMadafaka("i need", "baby");
+
+      // function sayHello(firstName, middleName) {
+      //   document.writeln(`<p>Selamat Siang ${firstName} ${middleName}`);
+      // }
+
+      // sayHello("Muki", "suki");
+    </script>
+    <!-- END OF FUNCTION PARAMETER -->
+
+    <!-- FUNCTION RETURN VALUE -->
+    <script>
+      // function sayHello(firstName, middleName) {
+      //   const say = `<p>Hello ${firstName} ${middleName}`;
+      //   return say;
+      // }
+
+      // let a = sayHello("Muhammad", "fitrian");
+
+      // document.writeln(`<p>${a}</p>`);
+
+      // function nilaiAkhir(value) {
+      //   if (value > 90) {
+      //     return "Nilai Anda A";
+      //   } else if (value > 80) {
+      //     return "Nilai Anda B";
+      //   } else if (value > 70) {
+      //     return "Nilai Anda C";
+      //   } else if (value > 60) {
+      //     return "Nilai Anda D";
+      //   } else {
+      //     return "TOLOL";
+      //   }
+      // }
+
+      // let nilai_input = Number(prompt("Masukkan nilai Anda :"));
+      // alert(nilaiAkhir(nilai_input));
+
+      // function nilaiAkhir(value) {
+      //   if (value > 90) {
+      //     return "Nilai Anda A";
+      //   }
+      // }
+
+      // nilaiAkhir(100);
+    </script>
+    <!-- end of FUNCTION RETURN VALUE -->
+
+    <!-- REST PARAMETER -->
+    <script>
+      // function total(buah, ...jumlah) {
+      //   let total = 0;
+      //   for (const total_buah of jumlah) {
+      //     total += total_buah;
+      //   }
+      //   document.writeln(`Total ${buah} adalah ${total}`);
+      // }
+
+      // total("Mangga", 1, 2, 23, 231, 31, 23, 123, 12, 3, 21);
+
+      // function buah(nama_buah, ...jumlah) {
+      //   let total = 0;
+      //   for (const total_jumlah of jumlah) {
+      //     total += total_jumlah;
+      //   }
+      //   document.writeln(`Total dari buah ${nama_buah} adalah ${total}`);
+      // }
+
+      // buah("Mangga", 123, 123, 213, 12, 3, 123, 12, 3, 123);
+
+      // function buah(nama_buah, ...total) {
+      //   let total_semua = 0;
+      //   for (const total_jumlah of total) {
+      //     total_semua += total_jumlah;
+      //   }
+      //   document.writeln(`<p>Total ${nama_buah} adalah ${total_semua}`);
+      // }
+
+      // buah("ayam", 1, 2, 3, 4);
+
+      // function gula(makanan, ...kadarGula) {
+      //   let gulaHarian = 30;
+      //   for (const gulaHariItu of kadarGula) {
+      //     Number((gulaHarian += gulaHariItu));
+      //   }
+      //   document.writeln(`<p>Makanan ini ${makanan} mengandung gula sebanyak ${gulaHarian}`);
+      // }
+
+      // gula("Soda", 1230);
+
+      // function totalGula(makanan, ...gula) {
+      //   let gulaHarian = 30;
+      //   for (const totalHariItu of gula) {
+      //     Number((gulaHarian += totalHariItu));
+      //   }
+      //   document.writeln(`<p>Makanan ini ${makanan} memiliki gula sekitar ${totalHariGuItu}`);
+      // }
+
+      // totalGula("soda", 1, 12, 3, 4, 3);
+    </script>
+    <!-- END OF PARAMETER -->
+
+    <!-- FUNCTION SEBAGAI VALUE -->
+    <script>
+      // function sayHello(value) {
+      //   return "document.writeln(`<p>Hello ${value}`)";
+      // }
+
+      // sayHello(a);
+      // let say = sayHello;
+
+      // say("Martanto");
+
+      // function nilaiUjian(value) {
+      //   if (nilaiUjian > 90) {
+      //     return "A";
+      //   }
+      // }
+
+      // let u = nilaiUjian;
+      // let a = document.writeln("Ini Nilainya");
+
+      // console.log(u(a));
+    </script>
+    <!-- end of FUNCTION SEBAGAI VALUE -->
+
+    <!-- FUNCTION DALAM FUNCTION -->
+    <script>
+      // function sayHello(nama) {
+      //   document.writeln(`Hello ${nama}`);
+      // }
+
+      // let a = sayHello;
+
+      // sayHello("Martanto");
+      // // a("Martanto");
+
+      // function akhirNama(akhir) {
+      //   document.writeln(`${akhir}`);
+      // }
+
+      // akhirNama(sayHello);
+    </script>
+    <!-- END OF FUNCTION DALAM FUNCTION -->
+
+    <!-- anonymous function -->
+    <script>
+      // let nilaiUjian = function (value) {
+      //   if (value > 90) {
+      //     document.writeln(`<p>Nilai Anda A</p>`);
+      //   } else {
+      //     document.writeln(`<p>cah TOLOL</p>`);
+      //   }
+      // };
+      // nilaiUjian(60);
+    </script>
+    <!-- end of anonymous function -->
+
+    <!-- FUNCTION -->
+  </body>
+</html>

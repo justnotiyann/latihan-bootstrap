@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+    <title>LATIHAN NAVBAR CARD DAN FORM</title>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Mochiy Pop P One", sans-serif;
+        position: relative;
+      }
+
+      .banner {
+        height: 100vh;
+        background-image: url(../img/cover4.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .contact-us {
+        background-color: rgb(246, 241, 241);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- START NAVBAR -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- START LOGO / NAMA PERUSAHAAN -->
+        <a class="navbar-brand p-3" href="#">Baby Shop</a>
+        <!-- END -->
+
+        <!-- START BOTTON RESPONSIVE -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- END OF BUTTON RESPONSIVE -->
+
+        <!-- START ITEMS NAV -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item me-3">
+              <a class="nav-link active" aria-current="page" href="#navbarNav">Home</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#product">Product</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#contact"><i class="bi bi-telephone me-2"></i>Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <!-- END OF ITEMS NAV -->
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- START JUMBOTRON -->
+    <div class="container-fluid banner d-flex align-items-center">
+      <div class="container">
+        <h3 class="text-center text-light mb-3" style="margin-top: -6rem">What are you looking for ?</h3>
+        <!-- start of select button -->
+        <div class="input-group">
+          <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+            <option selected>Search Here !</option>
+            <option value="1">Feeding Baby Set</option>
+            <option value="2">Baby Shoap</option>
+            <option value="3">Baby Pacifier</option>
+          </select>
+          <button class="btn btn-outline-secondary btn-light" type="button">Button</button>
+        </div>
+        <!-- end of select button -->
+      </div>
+    </div>
+    <!-- END OF JUMBOTRON -->
+
+    <!-- START OF CARD -->
+    <div class="container-fluid mb-5">
+      <div class="container">
+        <h3 class="text-center m-3 p-5" id="product">Our Product</h3>
+        <div class="row">
+          <!-- START CARD 1 -->
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="../img/set.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title mb-3 text-center">Feeding Baby Set</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-success w-100">Buy Now !</a>
+              </div>
+            </div>
+          </div>
+          <!-- END OF CARD 1 -->
+          <!-- START CARD 2 -->
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="../img/set2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title mb-3 text-center">Baby Pacifier</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-success w-100">Buy Now !</a>
+              </div>
+            </div>
+          </div>
+          <!-- END OF CARD 2 -->
+          <!-- START OF CARD 3 -->
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="../img/set3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title mb-3 text-center">Baby Shoap</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-success w-100">Buy Now !</a>
+              </div>
+            </div>
+          </div>
+          <!-- END OF CARD 3 -->
+        </div>
+      </div>
+    </div>
+    <!-- END OF CARD -->
+
+    <!-- START OF CONTACT US -->
+    <div class="container-fluid contact-us">
+      <div class="container">
+        <h3 class="text-center m-3 p-5" id="contact">Contact Us !</h3>
+        <!-- START OF FORM -->
+        <form action="">
+          <div class="row">
+            <!-- START OF NAMA DEPAN -->
+            <div class="col-lg-6 mb-3">
+              <label for="" class="form-label">Nama Depan</label>
+              <input type="text" name="" id="" class="form-control" placeholder="Masukkan Nama Depan Anda" />
+            </div>
+            <!-- END OF NAMA DEPAN -->
+
+            <!-- START OF NAMA AKHR -->
+            <div class="col-lg-6 mb-3">
+              <label for="" class="form-label">Nama Akhir</label>
+              <input type="text" name="" id="" class="form-control" placeholder="Masukkan Nama Akhir Anda" />
+            </div>
+            <!-- END OF NAMA AKHIR -->
+          </div>
+
+          <!-- START OF EMAIL -->
+          <div class="mb-3">
+            <label for="" class="form-label">Masukkan Email Anda</label>
+            <input type="text" class="form-control" placeholder="Masukkan Email Anda" aria-label="Username" aria-describedby="basic-addon1" />
+          </div>
+          <!-- END OF EMAIL -->
+
+          <!-- START OF PESAN -->
+          <div class="mb-3">
+            <label for="" class="form-label">Masukkan Pesan Anda</label>
+            <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Masukkan Pesan"></textarea>
+          </div>
+          <!-- END OF PESAN -->
+
+          <!-- START OF BUTTON -->
+          <div class="">
+            <button class="btn btn-success w-100">Kirim</button>
+          </div>
+
+          <!-- END OF BOTTON -->
+        </form>
+        <!-- END OF FORM -->
+      </div>
+    </div>
+    <!-- END OF CONTACT US -->
+
+    <!-- START OF FOOTER -->
+    <!-- <div class="container-fluid">
+      <h6 class="text-center">
+        created with <span class="text-danger"><i class="bi bi-suit-heart-fill danger bi-danger"></i></span> by Bang Iyan
+      </h6>
+    </div> -->
+    <!-- END OF FOOTER -->
+  </body>
+</html>

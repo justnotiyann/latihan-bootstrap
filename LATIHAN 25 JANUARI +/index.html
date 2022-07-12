@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LATIHAN 25 JANUARI JAVASCRIPT</title>
+  </head>
+  <body>
+    <!-- FUNCTION SEBAGAI VALUE -->
+    <script>
+      //   function nilaiUjian(value) {
+      //     if (value > 90) {
+      //       document.writeln(`<p>Nilai Anda A</p>`);
+      //     } else {
+      //       document.writeln(`<p>Anda belum lulus</p>`);
+      //     }
+      //   }
+
+      //   let a = nilaiUjian;
+
+      //   a(10);
+
+      //     // contoh 2
+      //   function sayHello(nama) {
+      //     document.writeln(`Hello ${nama}`);
+      //   }
+
+      //   let say = sayHello;
+
+      //   say("budi");
+
+      //   function sayHola(nama) {
+      //     nama("budi hola");
+      //   }
+
+      //   sayHola(sayHello);
+    </script>
+    <!-- end of FUNCTION SEBAGAI VALUE -->
+
+    <!-- ANONYMOUS FUNCTION -->
+    <script>
+      // DALAM BENTUK VARIABEL
+      //   let nilaiUjian = function (value) {
+      //     if (value > 90) {
+      //       document.writeln("Nilai Anda A");
+      //     } else {
+      //       document.writeln("Tidak Lulus");
+      //     }
+      //   };
+      //   nilaiUjian(10);
+
+      // DALAM BENTUK PARAMETER
+
+      // function giveMeName(nama) {
+      //   document.writeln("Muhammad Fitrian");
+      // }
+
+      // giveMeName(function (value) {
+      //   document.writeln(`<p>Hai ${value}</p>`);
+      // });
+    </script>
+    <!-- end ANONYMOUS FUNCTION -->
+
+    <!-- FUNCTION DALAM FUNCTION -->
+    <script>
+      function outer() {
+        function dalam(value) {
+          if (value > 90) {
+            console.log("A");
+          } else {
+            console.log("B");
+          }
+        }
+        dalam(60);
+      }
+    </script>
+    <!-- end of FUNCTION DALAM FUNCTION -->
+  </body>
+</html>
