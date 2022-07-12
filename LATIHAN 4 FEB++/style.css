@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap');
+
+:root {
+    --primary-color: #941b0c;
+    --secondary-color: #db222a;
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Quicksand', sans-serif;
+}
+
+
+.darkmode{
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+
+
+#landingpage {
+    height: 25rem;
+    background-color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before After HTML</title>
+    <style>
+        h1::before{
+            content:"Hello Ini dari Before ";
+            color: green;
+            font-size: 2rem;
+        }
+
+        h1::after{
+            content:" Hello ini dari after";
+            color: goldenrod;
+            font-size: 1em;
+        }
+
+        div::before,
+        div::after{
+            content:"";
+            width: 20px;
+            height: 20px;
+            position: absolute;
+        }
+
+        div{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            position:relative;
+            margin: 20px auto;
+        }
+
+        div::before{
+            background-color: salmon;
+            top:-10px;
+            left:-10px;
+        }
+        div::after{
+            background-color: lightblue;
+            bottom:-10px;
+            left:-10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello world</h1>
+
+    <div>Ini kotak</div>
+</body>
+</html>

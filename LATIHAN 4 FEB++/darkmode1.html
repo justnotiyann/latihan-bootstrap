@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Dark Mode 1</title>
+
+    <style>
+        .darkmode{
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+
+</head>
+<body>
+
+
+    <h1>ini adalah latihan dark mode</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, fugiat! Eaque sit aperiam molestias autem dolorem perspiciatis, beatae, architecto earum totam, asperiores optio. Eum accusantium explicabo rerum sit. Magnam, veritatis!</p>
+
+    <button onclick="setDarkMode()" id="btnDark">Dark Mode</button>
+
+
+    <script>
+        if(localStorage.getItem("theme") == "dark"){
+            setDarkMode()
+        }
+
+    
+    function setDarkMode(){
+        let darkLight = "" // Untuk Memasukkan Value HTML (Dark or Light )
+        isDark = document.body.classList.toggle("darkmode") 
+
+        if (isDark) {
+            darkLight = "Dark"
+            document.body.setAttribute("id", "darkmode")
+            localStorage.setItem("theme", "dark")
+        }else {
+            darkLight = "Light"
+            document.body.setAttribute("id", "")
+            localStorage.removeItem("theme")
+        }
+            document.getElementById("btnDark").innerHTML = darkLight
+            }
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
